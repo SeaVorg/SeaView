@@ -1,0 +1,77 @@
+ html, body, #map-canvas {
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+.layerToggle {
+	padding: 5px; 
+	z-index: 0; 
+	position: absolute; 
+	right: 10px; 
+	top: 0px;
+	opacity: 0.6;
+	width: 125px;
+}
+
+.layerToggle div {
+	cursor: pointer; 
+	text-align: center; 
+
+}
+.selected div {
+	background-color: #ddd;
+	font-weight: bold;
+	margin-bottom: 1px;
+}
+.selected div:hover {
+	font-weight: bold;
+	background-color: red; 
+	-webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+
+}
+.unselected div {
+	font-weight: normal;
+	background-color: white;
+	margin-bottom: 1px;
+}
+.unselected div:hover {
+	font-weight: normal;
+	background-color: green;
+	-webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+/*.selcted div and .unselcted div*/
+.layerToggle div div {
+	font-family: 'Century Gothic'; 
+	font-size: 20px; 
+	padding-left: 4px; 
+	padding-right: 4px; 
+}
+.legend{
+	padding-top: 0px;
+	padding-left:3px;
+	padding-right:3px;
+	padding-bottom:0px;
+	font-family: 'Century Gothic';
+	background-color: white;
+	z-index: 0;
+	position: absolute;
+	right:10px;
+	bottom:5%;
+	width:200px;
+	opacity: 0.4;
+}
+.legend:hover{
+opacity:1;
+-webkit-transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
