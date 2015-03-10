@@ -2,7 +2,7 @@ This is SeaView
 ================
 
 We are some highschoolers from Bulgaria who have an idea and spirit, and also we can code.
-The webpage at which you can view the project is http://uvkk8e51549f.venom1724.koding.io/
+The webpage at which you can view the project is http://seaview.zapto.org/
 
 About SeaView
 ===============================
@@ -23,7 +23,7 @@ About us
 
 | venom1724 | LazyMomo |
 |--- |--- 
-| ![venom1724]() | ![LazyMomo]() |
+| ![venom1724](https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-frc3/v/t1.0-9/946934_504838472898488_1574287589_n.jpg?oh=b78a92dc293b400fd130db630681ee57&oe=5589190B&__gda__=1438298367_5e67ebd6689d5d62c27d84dc752243aa) | ![LazyMomo](https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xfa1/v/t1.0-9/10556429_672476489489080_2178045003608060_n.jpg?oh=fde16316ac883476d600a9b60c102924&oe=55BD4B47&__gda__=1434666464_7f65176a8c5b4e741a9f9b0cbe7f8e43) |
 
 Although we are still in highschool, we have experience in programming and developing in many languages and platforms.
 This is our first time at event like this, but we are ready and hopefully we can participate.
