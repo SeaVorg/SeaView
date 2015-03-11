@@ -10,10 +10,19 @@ function buttonListeners() {
       $("#stationsToggle").addClass("selected");
       $("#stationsToggle").removeClass("unselected");
     }
-    displayStations = !displayStations;
+	displayStations = !displayStations;
+	
+	if(displayStations==true)
+	{
+		markerCluster = new MarkerClusterer(map, markers)
+	}
+    else markerCluster.clearMarkers();
       $.each(markers, function(key, val) {
         this.setVisible(displayStations);
       });
+	  //markerCluster.setMap(null);
+	  
+	  
   });
 
   $("#currentsToggle").click(function() {
