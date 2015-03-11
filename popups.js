@@ -83,7 +83,7 @@ function downloadUrl(url, callback) {
 }
 
 function populateInfoWindow(stn,stnpos,lat,lon,owner,marker) {
-   downloadUrl("http://www.corsproxy.com/www.ndbc.noaa.gov/get_observation_as_xml.php?station="+stn, function(xml, responseCode) {
+   downloadUrl("http://crossorigin.me/http://www.ndbc.noaa.gov/get_observation_as_xml.php?station="+stn, function(xml, responseCode) {
       var html = null;
       if (responseCode != 200 && responseCode != 304) {
          html = '<strong>Station '+stn.toUpperCase()+'<br />'+owner+'<br />Location:<\/strong> '+formatLat(lat)+' '+formatLon(lon)+'<br />There are no recent (&lt; 8 hours) meteorological data for this station.<br .>';
