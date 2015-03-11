@@ -16,7 +16,7 @@ Those include:
 -Better clustering schema ( since there are too much stations we decided to cluster the overlapping ones, but didnt turn out very good )
 -Some ocean colouring based on the temperature
 -Better graphics for the currents  ( we used a script )
--Switch from 2d to 3d map - sphere model using webGL. We actually tried that first but we assumed its better to do something easier for our first hackathon :)
+-Switch from 2d to 3d map - sphere model using webGL. We actually tried that first but we assumed its better to do something easier first :)
 
 About us
 ===========================
