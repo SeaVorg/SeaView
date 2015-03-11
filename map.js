@@ -1,6 +1,9 @@
 var map;
 var chicago = new google.maps.LatLng(41.850033, -87.650052);
 var markerCluster;
+var doneCreatingMap=false;
+var stationsMax=0;
+var stationsCount=0;
 
 function createMap() {
 	var roadAtlasStyles = [{
@@ -88,17 +91,30 @@ function lets_hope()
   })
 }
 
+function hideLogo()
+{
+	document.getElementById("Rull").style.zIndex=0;
+}
+
 function initialize() {
-  createMap();
+  
+  if(doneCreatingMap==true){
+  hideLogo();
   createCurrents();
 
   
   //lets_hope();
   //Init_SPIDER();
-  addStations();
+  
   
   //UpdateStations();
   buttonListeners();
+  }
+  else{
+  createMap();
+  
+  addStations();
+  }
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
