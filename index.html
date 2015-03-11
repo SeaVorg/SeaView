@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>GP Web app</title>
+    <title>SeaView Web app</title>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 	<script src="http://jawj.github.io/OverlappingMarkerSpiderfier/bin/oms.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -13,9 +13,13 @@
     <script src="markers.js"></script>
     <script src="currents.js"></script>
     <script src="map.js"></script>
+	<script src="spin.js"></script>
     <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
   </head>
   <body>
+	<div id="Rull">
+		<img src="images/SeaViewerLoading.gif" id="rulimg">
+	</div>
     <div id="map-canvas">
     </div>
     <div class="layerToggle">
@@ -33,11 +37,7 @@
 <img src="images/marker.png"> - Buoy station<br>
 <img src="images/red_arrow.png"> - Warm current<br>
 <img src="images/blue_arrow.png"> - Cold current<br>
-<<<<<<< HEAD
-<img src="images/marker.gif"> - Tsunami station in event modes
-=======
 <img src="images/marker.gif"> - Tsunami station in event mode
->>>>>>> origin/master
  </div>
   </body>
 
