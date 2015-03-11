@@ -7,16 +7,24 @@ var map;
 function stationData(id, stuff) {
   $.ajax({
     type: 'GET',
-    url: 'http://www.corsproxy.com/www.ndbc.noaa.gov/get_observation_as_xml.php?station=' + id,
+    url: 'http://crossorigin.me/http://www.ndbc.noaa.gov/get_observation_as_xml.php?station=' + id,
     success: function( data ) {
   
     var result;
     
       var xml;
+	  stationsCount++;
+	  if(stationsCount>=690){
+	  if(doneCreatingMap==false){
+	  doneCreatingMap=true;
+	  initialize();
+	  }
+	  }
+	  console.log(stationsCount);
       if (window.ActiveXObject){
         xml = data.xml;
       } else {
-        xml = (new XMLSerializer()).serializeToString(data);
+        xml = data;
       }
       var xmlData = $.parseXML(xml);
       var $xml = $(xmlData);
@@ -75,6 +83,7 @@ function addStations() {
       }
 	  );
 	   markerCluster = new MarkerClusterer(map, markers);
+	   
     }
   })
 }
