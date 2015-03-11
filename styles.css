@@ -75,3 +75,21 @@ opacity:1;
   -o-transition: opacity 0.4s;
   transition: opacity 0.4s;
 }
+
+#Rull{
+	position:absolute;
+	top: 0px;
+	left: 0px;
+	z-index:9;
+	
+	height:100%;
+	width:100%;
+	min-width:100%;
+	text-align: center;
+	min-height:100%;
+	background: white;
+}
+
+#rulimg{
+margin-top: 10%;
+}
